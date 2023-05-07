@@ -23,8 +23,10 @@
   },
   "homepage": "https://github.com/raunakb03/proshop-ecommerce-project#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "concurrently": "^8.0.1",
     "dotenv": "^16.0.3",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^7.1.0"
   }
 }
