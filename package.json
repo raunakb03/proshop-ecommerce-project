@@ -1,0 +1,30 @@
+{
+  "name": "proshop-ecommerce-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raunakb03/proshop-ecommerce-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raunakb03/proshop-ecommerce-project/issues"
+  },
+  "homepage": "https://github.com/raunakb03/proshop-ecommerce-project#readme",
+  "dependencies": {
+    "concurrently": "^8.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
