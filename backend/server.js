@@ -5,16 +5,19 @@ import connectDB from './config/db.js';
 import dotenv from 'dotenv';
 dotenv.config();
 import productRouter from './routes/productRoute.js';
+import userRouter from './routes/userRoutes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 
 connectDB();
 
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('api is running...');
 });
 
 app.use('/api/products', productRouter);
+app.use('/api/users', userRouter);
 
 app.use(notFound);
 app.use(errorHandler);
